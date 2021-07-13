@@ -1,55 +1,52 @@
-# Печенье и плиты: модель пекарни
+# Cookies and ovens: bakery model
 
-## Введение
-*I ❤️ Cookies* - это пекарня, специализирующаяся на приготовлении вкусного печенья. Пекарня быстро растет и ей становится сложно удовлетворять спрос. Некоторые программы управления пекарней должны помогать достигать поставленных целей. Ваша задача - создать программу, которая поможет управлять пекарней.
+## Introduction
+*I ❤️ Cookies*: a bakery that specializes in various types of delicious cookies. The bakery is rapidly growing, and it's becoming difficult to meet the demand. Your task is to create a program that will help you manage your bakery.
 
-Вот несколько пожеланий пользователей, которые помогут вам начать:
+Here's some user feedback to help you get started:
+- As a baker, I want to make different types of cookies (peanut butter, chocolate chips, etc.).
+- As a baker, I want to put batches of cookies in the oven.
+- As a baker, I want to know when a batch is ready so that I can take it out of the oven.
 
-- Как пекарь, я хочу делать разные типы печенья (с арахисовым маслом, шоколадной крошкой и т. д.).
-- Как пекарь, я хочу помещать партии печенья в духовку.
-- Как пекарь, я хочу знать, когда партия печенья будет готова, чтобы достать её из духовки.
+### Object-oriented approach. Design.
+This assignment's goal is to transfer objects, classes of the real world to objects, classes of your program. You should follow these guidelines. 
 
-### Объектно-ориентированный подход. Проектирование
-Цель этой задачи - переложить объекты, классы реального мира на объекты, классы вашей программы. Вот некоторые рекомендации, которым вы должны следовать.
+##Цель этой задачи - переложить объекты, классы реального мира на объекты, классы вашей программы.
 
-* Создавайте четко определенные классы, которые отвечают за что-то одно.
-* Внедряйте чистую и гибкую логику взаимодействия между объектами.
-
+* Create well-defined classes, each responsible for one thing.
+* Implement clean and flexible logic for communicating between objects.
 
 ## Releases
-### Pre-release: Понимание проблемы
-Прежде чем вы начнете писать код, вам нужно подумать об этой проблеме критически. Затем опишите на простом русском языке как разработать эту программу. Рассмотрите следующие вопросы.
+### Pre-release: Understanding the problem
+Before you start coding,  thoroughly think through the issue. Then, in plain English, describe how you'll create this program. 
+Consider the following questions:
+- What are the main classes?
+- What attributes will each class have?
+- What functionality will each class provide?
+- How will the classes interact with each other?
+- Do you need to use inheritance? Composition? Do you know what composition is?
 
-- Каковы основные классы?
-- Какие атрибуты будет иметь каждый класс?
-- Какой функционал будет предоставлять каждый класс?
-- Как классы будут взаимодействовать друг с другом?
-- Имеет ли смысл наследование? Композиция? Вы знаете что такое композиция?
+### Release 0: Minimum Viable Product (MVP) Implementation
 
+After understanding your program's components, start coding. Build a *Minimum Viable Product* (MVP) - no fancy features, just the essentials.
 
-### Release 0: Внедрение минимально жизнеспособного продукта
-С некоторым представлением о том, какие компоненты составляют вашу программу, начните писать код. Постройте *минимальный жизнеспособный продукт* (MVP) – никаких нестандартных функций, только самые необходимые.
+Using the *Introduction* for reference, make a program that can put cookies in the oven, bake them, and take them out. If the cookies are in the oven, you must bake them, checking for a change in readiness status.
+Now, let's take this opportunity to practice writing tests! Your tests should describe your class' functions.
 
-Основываясь на рассказах пользователя во *Введении*, вы должны иметь возможность готовить печенье, вы должны иметь возможность помещать печенье в печь и вытаскивать из нее. Если печенье находится в духовке, то вы должны испечь его и проверить статус его готовности.
+### Release 1: Additional Features
+Excellent! You've written an MVP. Now, it's time to expand the program: add and test some new features. 
 
-У вас есть отличная возможность написать несколько тестов, описывающих работу ваших классов!
+Please do the following:
+- Create several types of cookies, each with a different baking time.
+- The cookies should have four possible statuses: `doughy`, `almostReady`, `ready`, and `burned`, depending on their baking time.
 
+### Release 2: Refactoring
+[Refactoring](https://en.wikipedia.org/wiki/Code_refactoring) is an essential part of development. Take a step back, look at your code, and optimize optimizable code. 
+Pay attention to the following aspects:
+- Are you giving objects more properties/functions than necessary?
+- Are you unnecessarily repeating logic throughout your code?
+- Are your classes orthogonal? [Orthogonal](http://stackoverflow.com/a/1527430)
 
-### Release 1: Дополнительные функции
-Отлично! Вы написали MVP. Теперь пора расширить программу, добавив некоторые новые функции и, как всегда, протестировать их. Вы должны обязательно выполнить следующее:
+### Release 3: Be Creative!
 
-- Сделать несколько типов печенья, каждый из которых отличается временем выпечки.
-- Печенье имеет четыре возможных статуса в зависимости от того, как долго они пеклись: `doughy`,`almostReady`, `ready` и `burned`.
-
-### Release 2: Рефакторинг
-[Рефакторинг](https://bit.ly/2yVrgoV) является важной частью разработки. Сделайте шаг назад и посмотрите на код, который вы создали. Убедитесь, что он вам нравится и не хочется ничего оптимизировать. Хорошо ли вы понимаете ООП? Обратите внимание на следующие аспекты:
-
-- Используете ли вы большее количество свойств и функций для объекта, чем это необходимо?
-- Повторяете ли вы несколько раз одну и ту же логику в коде? Повторять не нужно.
-- Являются ли ваши классы ортогональными? ([Ортогональный][Ортогональный])
-
-
-### Release 3: Будьте креативны!
-Поставьте себя на место пекаря и подумайте какие ещё функции могут вам пригодиться. Выберите наиболее полезную и выполнимую функцию и добавьте ее в вашу программу.
-
-[Ортогональный]: http://stackoverflow.com/a/1527430
+Put yourself in a baker's shoes. What other features would be helpful? Choose and add the most useful/feasible functions to your program.
